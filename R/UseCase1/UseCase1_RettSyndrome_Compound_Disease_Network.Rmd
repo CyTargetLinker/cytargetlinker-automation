@@ -47,7 +47,7 @@ string.cmd = 'string disease query disease="Rett syndrome " cutoff=0.4 species="
 commandRun(string.cmd)
 ```
 
-![](https://cytoscape.github.io/cytoscape-automation/for-scripters/R/data/img/brc.png){height=100%}
+![](https://github.com/CyTargetLinker/cytargetlinker-tutorials/blob/master/R/UseCase1/figures/Rett_syndrome_network.png){height=100%}
 
 *** 
 
@@ -74,7 +74,7 @@ commandRun(CTLextend.cmd)
 CTLlayout.cmd = 'cytargetlinker applyLayout network=current'
 commandRun(CTLlayout.cmd)
 ```
-
+![](https://github.com/CyTargetLinker/cytargetlinker-tutorials/blob/master/R/UseCase1/figures/Rett_syndrome_extended-v1.png){height=100%}
 
 ### Apply specific style for compound-disease networks
 ```{r}
@@ -85,6 +85,7 @@ commandRun(LoadStyle.cmd)
 ApplyStyle.cmd = 'vizmap apply styles="CTL Disease Compound Network"'
 commandRun(ApplyStyle.cmd)
 ```
+![](https://github.com/CyTargetLinker/cytargetlinker-tutorials/blob/master/R/UseCase1/figures/Rett_syndrome_extended-v2.png){height=100%}
 
 *** 
 
