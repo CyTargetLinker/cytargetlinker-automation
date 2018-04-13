@@ -5,7 +5,7 @@ date: "April 13, 2018"
 output: html_document
 ---
 
-* Part of this script are based on information / examples provided on in https://github.com/cytoscape/cytoscape-automation * 
+*Part of this script are based on information / examples provided on in https://github.com/cytoscape/cytoscape-automation* 
 
 ## Step 0: Set up environment
 ### Set working directory
