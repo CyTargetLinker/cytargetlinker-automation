@@ -1,0 +1,121 @@
+---
+title: '[CTL] Compound / Disease Extension'
+author: "mkutmon, scoort"
+date: "April 13, 2018"
+output: html_document
+---
+## Step 0: Set up environment
+### Set working directory
+```{r set working directory}
+knitr:::input_dir()
+```
+
+### Install required libraries
+```{r setup, include=FALSE}
+if(!("pacman" %in% installed.packages())) install.packages("pacman")
+library(pacman)
+p_load(RJSONIO,igraph,httr,stringr,XML,RColorBrewer,devtools,rmarkdown)
+
+# CyREST helper functions
+install_github('cytoscape/cytoscape-automation/for-scripters/R/r2cytoscape')
+library(r2cytoscape)
+```
+
+### Test connection to Cytoscape and installed apps
+**port.number** needs to match value of Cytoscape property: rest.port (see Edit>Preferences>Properties...). Default is 1234.
+```{r test connection}
+#port.number = 1234
+#base.url = paste('http://localhost:',port.number,'/v1',sep="")
+
+checkCytoscapeVersion()
+
+if("string" %in% commandHelp("")) print("Success: the STRING app is installed") else print("Warning: STRING app is not installed. Please install the STRING app before proceeding.")
+if("cytargetlinker" %in% commandHelp("")) print("Success: the CyTargetLinker app is installed") else print("Warning: CyTargetLinker app is not installed. Please install the CyTargetLinker app before proceeding.")
+
+applyStyle('default') # cleanse the palette before importing new networks and styles
+```
+
+*** 
+
+## Step 1: Loading PPI network from STRING
+Use Cytoscape to query the STRING database a network of proteins associated with the Rett syndrome
+
+**If the STRING app is not installed, no error is reported, but your network  will be empty**
+```{r disease query}
+#define disease query, cutoff, species and limit
+string.cmd = 'string disease query disease="Rett syndrome " cutoff=0.4 species="Homo sapiens" limit=20'
+commandRun(string.cmd)
+```
+
+![](https://cytoscape.github.io/cytoscape-automation/for-scripters/R/data/img/brc.png){height=100%}
+
+*** 
+
+## Step 2: Extend network with compounds and diseases
+
+**If the CyTargetLinker app is not installed, no error is reported, but your network  will not be extended**
+
+**Load Linksets**
+LinkSets can be downloaded from the CyTargetLinker website https://projects.bigcat.unimaas.nl/cytargetlinker/linksets/ and preprocessed as R objects. 
+ 
+* ChEMBL
+* OMIM rare disease subset
+
+### Extend the network with protein-compound interactions from ChEMBL
+```{r}
+chembl <- file.path(getwd(), "LinkSets", "chembl_23_hsa_20180126.xgmml")
+omim <- file.path(getwd(), "LinkSets", "rare-disease-gene-associations-hsa-20180411.xgmml")
+CTLextend.cmd = paste('cytargetlinker extend idAttribute="display name" linkSetFiles="', chembl, ',', omim, '" network=current', sep="")
+commandRun(CTLextend.cmd)
+```
+
+### Apply a force-directed layout to the network
+```{r}
+CTLlayout.cmd = 'cytargetlinker applyLayout network=current'
+commandRun(CTLlayout.cmd)
+```
+
+
+### Apply specific style for compound-disease networks
+```{r}
+vizstyle.file <- file.path(getwd(), "VizStyles", "use-case1-style.xml")
+LoadStyle.cmd = paste('vizmap load file file="',vizstyle.file,'"', sep="")
+commandRun(LoadStyle.cmd)
+
+ApplyStyle.cmd = 'vizmap apply styles="CTL Disease Compound Network"'
+commandRun(ApplyStyle.cmd)
+```
+
+*** 
+
+## Step 3: Saving, sharing and publishing
+
+### Saving a Cytoscape session file
+Session files save *everything*. As with most project software, we recommend saving often!
+```{r}
+session.file <- file.path(getwd(), "Results", "RettSyndrome_Compound_Disease_Network.cys")
+saveSession(session.file) #.cys
+```
+
+### Exporting high resolution image files
+You can export extremely high resolution images, including vector graphic formats.
+```{r}
+pdf.file <- file.path(getwd(), "Results", "RettSyndrome_Compound_Disease_Network.pdf")
+exportImage(pdf.file,'PDF')
+png.file <- file.path(getwd(), "Results", "RettSyndrome_Compound_Disease_Network.png")
+exportImage(png.file,'PNG')
+```
+
+### Exporting interactive web pages via cytoscape.js
+You can export the network model in multiple standard formats. And if you want to get really fancy, you can export the model and style in cytoscape.js formats and host interactive views of your network analysis and visualization results online!
+```{r}
+cyjs.file <- file.path(getwd(), "Results", "RettSyndrome_Compound_Disease_Network.cyjs")
+exportNetwork(cyjs.file,'CYJS')  #.cyjs
+json.file <- file.path(getwd(), "Results", "RettSyndrome_Compound_Disease_Network.json")
+exportStyle(json.file,'json')
+```
+
+More details in Cytoscape manual chapter on [Interactive Web Applications](http://manual.cytoscape.org/en/stable/Export_Your_Data.html#as-an-interactive-web-application-new-in-3-2-0)
+
+
+And in Cytoscape, you can File>Export as Web Page... to produce a folder of cytoscape.js files and html.
