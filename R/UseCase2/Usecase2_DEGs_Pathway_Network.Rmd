@@ -44,11 +44,11 @@ Import the differentially expressed genes in Cytoscape
 **If the STRING app is not installed, no error is reported, but your network  will be empty**
 ```{r}
 degs <- file.path(getwd(), "Data", "DEGs.xlsx")
-import.cmd = paste('network import file file="',degs,'" indexColumnSourceInteraction=1 firstRowAsColumnNames=true', sep="")
+import.cmd = paste('network import file file="',degs,'" indexColumnSourceInteraction=1 firstRowAsColumnNames=true startLoadRow=1', sep="")
 commandRun(import.cmd)
 ```
 
-![](https://github.com/CyTargetLinker/cytargetlinker-tutorials/blob/master/R/UseCase1/figures/Rett_syndrome_network.png){height=100%}
+![](https://github.com/CyTargetLinker/cytargetlinker-tutorials/blob/master/R/UseCase2/figures/step1.png){height=100%}
 
 *** 
 
@@ -74,7 +74,6 @@ commandRun(CTLextend.cmd)
 CTLlayout.cmd = 'cytargetlinker applyLayout network=current'
 commandRun(CTLlayout.cmd)
 ```
-![](https://github.com/CyTargetLinker/cytargetlinker-tutorials/blob/master/R/UseCase1/figures/Rett_syndrome_extended-v1.png){height=100%}
 
 ### Filter genes with pathway associations:
 ```{r}
@@ -109,7 +108,7 @@ commandRun(LoadStyle.cmd)
 ApplyStyle.cmd = 'vizmap apply styles="CTL Gene Pathway Network"'
 commandRun(ApplyStyle.cmd)
 ```
-![](https://github.com/CyTargetLinker/cytargetlinker-tutorials/blob/master/R/UseCase1/figures/Rett_syndrome_extended-v2.png){height=100%}
+![](https://github.com/CyTargetLinker/cytargetlinker-tutorials/blob/master/R/UseCase2/figures/step2.png){height=100%}
 
 *** 
 
