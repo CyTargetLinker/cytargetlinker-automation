@@ -48,7 +48,7 @@ import.cmd = paste('network import file file="',degs,'" indexColumnSourceInterac
 commandRun(import.cmd)
 ```
 
-![](https://github.com/CyTargetLinker/cytargetlinker-tutorials/blob/master/R/UseCase2/figures/step1.png){height=100%}
+![](https://github.com/CyTargetLinker/cytargetlinker-tutorials/blob/master/R/UseCase2/Figures/step1.png){height=100%}
 
 *** 
 
@@ -108,7 +108,7 @@ commandRun(LoadStyle.cmd)
 ApplyStyle.cmd = 'vizmap apply styles="CTL Gene Pathway Network"'
 commandRun(ApplyStyle.cmd)
 ```
-![](https://github.com/CyTargetLinker/cytargetlinker-tutorials/blob/master/R/UseCase2/figures/step2.png){height=100%}
+![](https://github.com/CyTargetLinker/cytargetlinker-tutorials/blob/master/R/UseCase2/Figures/step2.png){height=100%}
 
 *** 
 
