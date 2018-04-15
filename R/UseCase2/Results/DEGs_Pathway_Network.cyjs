@@ -1,0 +1,1388 @@
+{
+  "format_version" : "1.0",
+  "generated_by" : "cytoscape-3.6.0",
+  "target_cytoscapejs_version" : "~2.1",
+  "data" : {
+    "shared_name" : "selection",
+    "name" : "selection",
+    "SUID" : 3506,
+    "selected" : true
+  },
+  "elements" : {
+    "nodes" : [ {
+      "data" : {
+        "id" : "3438",
+        "Z_Score" : 1.38,
+        "CTL_label" : "Alpha6-Beta4 Integrin Signaling Pathway",
+        "CTL_PathwayName" : "Alpha6-Beta4 Integrin Signaling Pathway",
+        "shared_name" : "WP488",
+        "CTL_Ext" : "step 1",
+        "CTL_PathwayID" : "WP488",
+        "CTL_Type" : "pathway",
+        "name" : "Alpha6-Beta4 Integrin Signaling Pathway",
+        "SUID" : 3438,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -350.75255527496324,
+        "y" : 71.36637514390435
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3374",
+        "Z_Score" : 1.36,
+        "CTL_label" : "Primary Focal Segmental Glomerulosclerosis FSGS",
+        "CTL_PathwayName" : "Primary Focal Segmental Glomerulosclerosis FSGS",
+        "shared_name" : "WP2573",
+        "CTL_Ext" : "step 1",
+        "CTL_PathwayID" : "WP2573",
+        "CTL_Type" : "pathway",
+        "name" : "Primary Focal Segmental Glomerulosclerosis FSGS",
+        "SUID" : 3374,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -522.8622354507445,
+        "y" : -59.491870705705026
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3435",
+        "Z_Score" : 2.46,
+        "CTL_label" : "Spinal Cord Injury",
+        "CTL_PathwayName" : "Spinal Cord Injury",
+        "shared_name" : "WP2432",
+        "CTL_Ext" : "step 1",
+        "CTL_PathwayID" : "WP2432",
+        "CTL_Type" : "pathway",
+        "name" : "Spinal Cord Injury",
+        "SUID" : 3435,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -325.0818170547484,
+        "y" : -285.1361578150801
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3370",
+        "Z_Score" : 0.68,
+        "CTL_label" : "ESC Pluripotency Pathways",
+        "CTL_PathwayName" : "ESC Pluripotency Pathways",
+        "shared_name" : "WP339",
+        "CTL_Ext" : "step 1",
+        "CTL_PathwayID" : "WP339",
+        "CTL_Type" : "pathway",
+        "name" : "ESC Pluripotency Pathways",
+        "SUID" : 3370,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -486.12392368316637,
+        "y" : -500.03172666273633
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3433",
+        "Z_Score" : 0.31,
+        "CTL_label" : "Chemokine signaling pathway",
+        "CTL_PathwayName" : "Chemokine signaling pathway",
+        "shared_name" : "WP2292",
+        "CTL_Ext" : "step 1",
+        "CTL_PathwayID" : "WP2292",
+        "CTL_Type" : "pathway",
+        "name" : "Chemokine signaling pathway",
+        "SUID" : 3433,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 215.61410007476817,
+        "y" : -329.26242429457227
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3239",
+        "CTL_label" : "Gpr6",
+        "logFC" : 1.661904227,
+        "CTL_GeneName" : "Gpr6",
+        "pValue" : 1.27843E-4,
+        "CTL_GeneID" : "ENSMUSG00000046922",
+        "shared_name" : "ENSMUSG00000046922",
+        "CTL_Ext" : "initial",
+        "CTL_Type" : "initial",
+        "name" : "ENSMUSG00000046922",
+        "SUID" : 3239,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -250.7525552749632,
+        "y" : 48.24747865952935
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3430",
+        "Z_Score" : 8.52,
+        "CTL_label" : "Arachidonate Epoxygenase   Epoxide Hydrolase",
+        "CTL_PathwayName" : "Arachidonate Epoxygenase   Epoxide Hydrolase",
+        "shared_name" : "WP1250",
+        "CTL_Ext" : "step 1",
+        "CTL_PathwayID" : "WP1250",
+        "CTL_Type" : "pathway",
+        "name" : "Arachidonate Epoxygenase   Epoxide Hydrolase",
+        "SUID" : 3430,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 519.314629173279,
+        "y" : -436.44308835707227
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3238",
+        "CTL_label" : "Col4a1",
+        "logFC" : 1.806897563,
+        "CTL_GeneName" : "Col4a1",
+        "pValue" : 2.51E-5,
+        "CTL_GeneID" : "ENSMUSG00000031502",
+        "shared_name" : "ENSMUSG00000031502",
+        "CTL_Ext" : "initial",
+        "CTL_Type" : "initial",
+        "name" : "ENSMUSG00000031502",
+        "SUID" : 3238,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -309.427356147766,
+        "y" : -393.38658506117383
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3428",
+        "Z_Score" : 0.44,
+        "CTL_label" : "Purine metabolism",
+        "CTL_PathwayName" : "Purine metabolism",
+        "shared_name" : "WP2185",
+        "CTL_Ext" : "step 1",
+        "CTL_PathwayID" : "WP2185",
+        "CTL_Type" : "pathway",
+        "name" : "Purine metabolism",
+        "SUID" : 3428,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 313.33940944671645,
+        "y" : -287.4021032496504
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3236",
+        "CTL_label" : "Col4a2",
+        "logFC" : 2.067068005,
+        "CTL_GeneName" : "Col4a2",
+        "pValue" : 1.88E-5,
+        "CTL_GeneID" : "ENSMUSG00000031503",
+        "shared_name" : "ENSMUSG00000031503",
+        "CTL_Ext" : "initial",
+        "CTL_Type" : "initial",
+        "name" : "ENSMUSG00000031503",
+        "SUID" : 3236,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -185.087081336975,
+        "y" : -551.3670309229902
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3299",
+        "CTL_label" : "Olig1",
+        "logFC" : -3.192768208,
+        "CTL_GeneName" : "Olig1",
+        "pValue" : 8.59621E-4,
+        "CTL_GeneID" : "ENSMUSG00000046160",
+        "shared_name" : "ENSMUSG00000046160",
+        "CTL_Ext" : "initial",
+        "CTL_Type" : "initial",
+        "name" : "ENSMUSG00000046160",
+        "SUID" : 3299,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -111.72574558258046,
+        "y" : -159.49187070570508
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3426",
+        "CTL_label" : "Dysregulated miRNA Targeting in Insulin/PI3K-AKT Signaling",
+        "CTL_PathwayName" : "Dysregulated miRNA Targeting in Insulin/PI3K-AKT Signaling",
+        "shared_name" : "WP3855",
+        "CTL_Ext" : "step 1",
+        "CTL_PathwayID" : "WP3855",
+        "CTL_Type" : "pathway",
+        "name" : "Dysregulated miRNA Targeting in Insulin/PI3K-AKT Signaling",
+        "SUID" : 3426,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -85.70012607574452,
+        "y" : -609.301410500627
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3297",
+        "CTL_label" : "Selenop",
+        "logFC" : -2.495792289,
+        "CTL_GeneName" : "Selenop",
+        "pValue" : 2.29E-7,
+        "CTL_GeneID" : "ENSMUSG00000064373",
+        "shared_name" : "ENSMUSG00000064373",
+        "CTL_Ext" : "initial",
+        "CTL_Type" : "initial",
+        "name" : "ENSMUSG00000064373",
+        "SUID" : 3297,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -404.51464023590074,
+        "y" : -584.1208685084395
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3424",
+        "Z_Score" : 4.79,
+        "CTL_label" : "Methylation",
+        "CTL_PathwayName" : "Methylation",
+        "shared_name" : "WP1247",
+        "CTL_Ext" : "step 1",
+        "CTL_PathwayID" : "WP1247",
+        "CTL_Type" : "pathway",
+        "name" : "Methylation",
+        "SUID" : 3424,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 847.4768987655641,
+        "y" : -692.2015875025801
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3295",
+        "CTL_label" : "Igfbp6",
+        "logFC" : -2.117626822,
+        "CTL_GeneName" : "Igfbp6",
+        "pValue" : 7.19E-6,
+        "CTL_GeneID" : "ENSMUSG00000023046",
+        "shared_name" : "ENSMUSG00000023046",
+        "CTL_Ext" : "initial",
+        "CTL_Type" : "initial",
+        "name" : "ENSMUSG00000023046",
+        "SUID" : 3295,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 78.79311428070079,
+        "y" : -443.38202268324414
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3422",
+        "Z_Score" : 2.48,
+        "CTL_label" : "Hypothetical Network for Drug Addiction",
+        "CTL_PathwayName" : "Hypothetical Network for Drug Addiction",
+        "shared_name" : "WP1246",
+        "CTL_Ext" : "step 1",
+        "CTL_PathwayID" : "WP1246",
+        "CTL_Type" : "pathway",
+        "name" : "Hypothetical Network for Drug Addiction",
+        "SUID" : 3422,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 343.9488912582399,
+        "y" : -518.2127645655684
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3294",
+        "CTL_label" : "Ppm1j",
+        "logFC" : -2.064756267,
+        "CTL_GeneName" : "Ppm1j",
+        "pValue" : 1.41E-8,
+        "CTL_GeneID" : "ENSMUSG00000002228",
+        "shared_name" : "ENSMUSG00000002228",
+        "CTL_Ext" : "initial",
+        "CTL_Type" : "initial",
+        "name" : "ENSMUSG00000002228",
+        "SUID" : 3294,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 162.2471204757692,
+        "y" : -59.491870705705026
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3419",
+        "CTL_label" : "Factors and pathways affecting insulin-like growth factor (IGF1)-Akt signaling",
+        "CTL_PathwayName" : "Factors and pathways affecting insulin-like growth factor (IGF1)-Akt signaling",
+        "shared_name" : "WP3675",
+        "CTL_Ext" : "step 1",
+        "CTL_PathwayID" : "WP3675",
+        "CTL_Type" : "pathway",
+        "name" : "Factors and pathways affecting insulin-like growth factor (IGF1)-Akt signaling",
+        "SUID" : 3419,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 14.299873924255479,
+        "y" : -531.6462438746504
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3417",
+        "CTL_label" : "Lung fibrosis",
+        "CTL_PathwayName" : "Lung fibrosis",
+        "shared_name" : "WP3632",
+        "CTL_Ext" : "step 1",
+        "CTL_PathwayID" : "WP3632",
+        "CTL_Type" : "pathway",
+        "name" : "Lung fibrosis",
+        "SUID" : 3417,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 59.22966823577897,
+        "y" : -59.491870705705026
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3415",
+        "Z_Score" : 0.94,
+        "CTL_label" : "Wnt Signaling Pathway and Pluripotency",
+        "CTL_PathwayName" : "Wnt Signaling Pathway and Pluripotency",
+        "shared_name" : "WP723",
+        "CTL_Ext" : "step 1",
+        "CTL_PathwayID" : "WP723",
+        "CTL_Type" : "pathway",
+        "name" : "Wnt Signaling Pathway and Pluripotency",
+        "SUID" : 3415,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 159.22966823577897,
+        "y" : 48.230297263044974
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3413",
+        "Z_Score" : 1.03,
+        "CTL_label" : "G Protein Signaling Pathways",
+        "CTL_PathwayName" : "G Protein Signaling Pathways",
+        "shared_name" : "WP232",
+        "CTL_Ext" : "step 1",
+        "CTL_PathwayID" : "WP232",
+        "CTL_Type" : "pathway",
+        "name" : "G Protein Signaling Pathways",
+        "SUID" : 3413,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 401.9402547836305,
+        "y" : -338.1129186793379
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3411",
+        "Z_Score" : 0.96,
+        "CTL_label" : "Amino Acid metabolism",
+        "CTL_PathwayName" : "Amino Acid metabolism",
+        "shared_name" : "WP662",
+        "CTL_Ext" : "step 1",
+        "CTL_PathwayID" : "WP662",
+        "CTL_Type" : "pathway",
+        "name" : "Amino Acid metabolism",
+        "SUID" : 3411,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 933.2213636398317,
+        "y" : -544.4531881257109
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3408",
+        "Z_Score" : -0.02,
+        "CTL_label" : "Non-odorant GPCRs",
+        "CTL_PathwayName" : "Non-odorant GPCRs",
+        "shared_name" : "WP1396",
+        "CTL_Ext" : "step 1",
+        "CTL_PathwayID" : "WP1396",
+        "CTL_Type" : "pathway",
+        "name" : "Non-odorant GPCRs",
+        "SUID" : 3408,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -248.43096485137923,
+        "y" : -59.491870705705026
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3279",
+        "CTL_label" : "Cd151",
+        "logFC" : -1.393051111,
+        "CTL_GeneName" : "Cd151",
+        "pValue" : 9.47E-5,
+        "CTL_GeneID" : "ENSMUSG00000025510",
+        "shared_name" : "ENSMUSG00000025510",
+        "CTL_Ext" : "initial",
+        "CTL_Type" : "initial",
+        "name" : "ENSMUSG00000025510",
+        "SUID" : 3279,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -433.70470371246324,
+        "y" : 2.5410577610918494
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3405",
+        "Z_Score" : 2.93,
+        "CTL_label" : "Myometrial Relaxation and Contraction Pathways",
+        "CTL_PathwayName" : "Myometrial Relaxation and Contraction Pathways",
+        "shared_name" : "WP385",
+        "CTL_Ext" : "step 1",
+        "CTL_PathwayID" : "WP385",
+        "CTL_Type" : "pathway",
+        "name" : "Myometrial Relaxation and Contraction Pathways",
+        "SUID" : 3405,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 188.30110607147228,
+        "y" : -485.29574948988477
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3276",
+        "CTL_label" : "Adamts4",
+        "logFC" : -1.283186044,
+        "CTL_GeneName" : "Adamts4",
+        "pValue" : 1.34E-5,
+        "CTL_GeneID" : "ENSMUSG00000006403",
+        "shared_name" : "ENSMUSG00000006403",
+        "CTL_Ext" : "initial",
+        "CTL_Type" : "initial",
+        "name" : "ENSMUSG00000006403",
+        "SUID" : 3276,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -43.09192218780501,
+        "y" : -59.491870705705026
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3403",
+        "Z_Score" : 1.95,
+        "CTL_label" : "Selenium metabolism/Selenoproteins",
+        "CTL_PathwayName" : "Selenium metabolism/Selenoproteins",
+        "shared_name" : "WP108",
+        "CTL_Ext" : "step 1",
+        "CTL_PathwayID" : "WP108",
+        "CTL_Type" : "pathway",
+        "name" : "Selenium metabolism/Selenoproteins",
+        "SUID" : 3403,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -522.8622354507445,
+        "y" : -605.172275368791
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3401",
+        "Z_Score" : 0.88,
+        "CTL_label" : "Integrin-mediated Cell Adhesion",
+        "CTL_PathwayName" : "Integrin-mediated Cell Adhesion",
+        "shared_name" : "WP6",
+        "CTL_Ext" : "step 1",
+        "CTL_PathwayID" : "WP6",
+        "CTL_Type" : "pathway",
+        "name" : "Integrin-mediated Cell Adhesion",
+        "SUID" : 3401,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -457.44652500152574,
+        "y" : -692.2015875025801
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3399",
+        "Z_Score" : 3.14,
+        "CTL_label" : "Selenium Micronutrient Network",
+        "CTL_PathwayName" : "Selenium Micronutrient Network",
+        "shared_name" : "WP1272",
+        "CTL_Ext" : "step 1",
+        "CTL_PathwayID" : "WP1272",
+        "CTL_Type" : "pathway",
+        "name" : "Selenium Micronutrient Network",
+        "SUID" : 3399,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -344.56315555572496,
+        "y" : -685.5024603053145
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3271",
+        "CTL_label" : "Ephx2",
+        "logFC" : -1.156345392,
+        "CTL_GeneName" : "Ephx2",
+        "pValue" : 5.21469E-4,
+        "CTL_GeneID" : "ENSMUSG00000022040",
+        "shared_name" : "ENSMUSG00000022040",
+        "CTL_Ext" : "initial",
+        "CTL_Type" : "initial",
+        "name" : "ENSMUSG00000022040",
+        "SUID" : 3271,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 621.6105123519899,
+        "y" : -478.1237142725996
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3397",
+        "Z_Score" : -1.35,
+        "CTL_label" : "mRNA processing",
+        "CTL_PathwayName" : "mRNA processing",
+        "shared_name" : "WP310",
+        "CTL_Ext" : "step 1",
+        "CTL_PathwayID" : "WP310",
+        "CTL_Type" : "pathway",
+        "name" : "mRNA processing",
+        "SUID" : 3397,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -146.10937442779525,
+        "y" : -59.491870705705026
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3269",
+        "CTL_label" : "Rtel1",
+        "logFC" : -1.138891814,
+        "CTL_GeneName" : "Rtel1",
+        "pValue" : 2.15204E-4,
+        "CTL_GeneID" : "ENSMUSG00000038685",
+        "shared_name" : "ENSMUSG00000038685",
+        "CTL_Ext" : "initial",
+        "CTL_Type" : "initial",
+        "name" : "ENSMUSG00000038685",
+        "SUID" : 3269,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 56.90807781219499,
+        "y" : 48.24747865952935
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3395",
+        "Z_Score" : 1.4,
+        "CTL_label" : "Endochondral Ossification",
+        "CTL_PathwayName" : "Endochondral Ossification",
+        "shared_name" : "WP1270",
+        "CTL_Ext" : "step 1",
+        "CTL_PathwayID" : "WP1270",
+        "CTL_Type" : "pathway",
+        "name" : "Endochondral Ossification",
+        "SUID" : 3395,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -46.109374427795245,
+        "y" : 48.230297263044974
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3267",
+        "CTL_label" : "Hnmt",
+        "logFC" : -1.10091265,
+        "CTL_GeneName" : "Hnmt",
+        "pValue" : 0.014701045,
+        "CTL_GeneID" : "ENSMUSG00000026986",
+        "shared_name" : "ENSMUSG00000026986",
+        "CTL_Ext" : "initial",
+        "CTL_Type" : "initial",
+        "name" : "ENSMUSG00000026986",
+        "SUID" : 3267,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 826.7417875289918,
+        "y" : -581.474147622209
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3392",
+        "CTL_label" : "Neural Crest Differentiation",
+        "CTL_PathwayName" : "Neural Crest Differentiation",
+        "shared_name" : "WP2074",
+        "CTL_Ext" : "step 1",
+        "CTL_PathwayID" : "WP2074",
+        "CTL_Type" : "pathway",
+        "name" : "Neural Crest Differentiation",
+        "SUID" : 3392,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -167.90491428375233,
+        "y" : -258.924472634416
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3390",
+        "CTL_label" : "p53 signaling",
+        "CTL_PathwayName" : "p53 signaling",
+        "shared_name" : "WP2902",
+        "CTL_Ext" : "step 1",
+        "CTL_PathwayID" : "WP2902",
+        "CTL_Type" : "pathway",
+        "name" : "p53 signaling",
+        "SUID" : 3390,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 169.6827627182008,
+        "y" : -692.2015875025801
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3387",
+        "Z_Score" : -0.2,
+        "CTL_label" : "PluriNetWork",
+        "CTL_PathwayName" : "PluriNetWork",
+        "shared_name" : "WP1763",
+        "CTL_Ext" : "step 1",
+        "CTL_PathwayID" : "WP1763",
+        "CTL_Type" : "pathway",
+        "name" : "PluriNetWork",
+        "SUID" : 3387,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 40.952736473083604,
+        "y" : -684.6999128504805
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3259",
+        "CTL_label" : "Adcy8",
+        "logFC" : -1.032200601,
+        "CTL_GeneName" : "Adcy8",
+        "pValue" : 0.022550186,
+        "CTL_GeneID" : "ENSMUSG00000022376",
+        "shared_name" : "ENSMUSG00000022376",
+        "CTL_Ext" : "initial",
+        "CTL_Type" : "initial",
+        "name" : "ENSMUSG00000022376",
+        "SUID" : 3259,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 303.25342617034926,
+        "y" : -408.0096471949629
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3384",
+        "Z_Score" : 0.6,
+        "CTL_label" : "Focal Adhesion-PI3K-Akt-mTOR-signaling pathway",
+        "CTL_PathwayName" : "Focal Adhesion-PI3K-Akt-mTOR-signaling pathway",
+        "shared_name" : "WP2841",
+        "CTL_Ext" : "step 1",
+        "CTL_PathwayID" : "WP2841",
+        "CTL_Type" : "pathway",
+        "name" : "Focal Adhesion-PI3K-Akt-mTOR-signaling pathway",
+        "SUID" : 3384,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -198.41374530792226,
+        "y" : -444.1852253123335
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3255",
+        "CTL_label" : "Igfbp3",
+        "logFC" : -1.010672532,
+        "CTL_GeneName" : "Igfbp3",
+        "pValue" : 0.001836289,
+        "CTL_GeneID" : "ENSMUSG00000020427",
+        "shared_name" : "ENSMUSG00000020427",
+        "CTL_Ext" : "initial",
+        "CTL_Type" : "initial",
+        "name" : "ENSMUSG00000020427",
+        "SUID" : 3255,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 113.56370601654064,
+        "y" : -591.1334531947188
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3380",
+        "Z_Score" : 3.67,
+        "CTL_label" : "Focal Adhesion",
+        "CTL_PathwayName" : "Focal Adhesion",
+        "shared_name" : "WP85",
+        "CTL_Ext" : "step 1",
+        "CTL_PathwayID" : "WP85",
+        "CTL_Type" : "pathway",
+        "name" : "Focal Adhesion",
+        "SUID" : 3380,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -295.5334352493285,
+        "y" : -495.49110776625196
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3251",
+        "CTL_label" : "Rhob",
+        "logFC" : 1.092397232,
+        "CTL_GeneName" : "Rhob",
+        "pValue" : 0.04639152,
+        "CTL_GeneID" : "ENSMUSG00000054364",
+        "shared_name" : "ENSMUSG00000054364",
+        "CTL_Ext" : "initial",
+        "CTL_Type" : "initial",
+        "name" : "ENSMUSG00000054364",
+        "SUID" : 3251,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -240.48034133911122,
+        "y" : -359.7066763087324
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3378",
+        "Z_Score" : 0.45,
+        "CTL_label" : "Calcium Regulation in the Cardiac Cell",
+        "CTL_PathwayName" : "Calcium Regulation in the Cardiac Cell",
+        "shared_name" : "WP553",
+        "CTL_Ext" : "step 1",
+        "CTL_PathwayID" : "WP553",
+        "CTL_Type" : "pathway",
+        "name" : "Calcium Regulation in the Cardiac Cell",
+        "SUID" : 3378,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 419.31462917327895,
+        "y" : -441.39474851332227
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3376",
+        "Z_Score" : 1.96,
+        "CTL_label" : "Metapathway biotransformation",
+        "CTL_PathwayName" : "Metapathway biotransformation",
+        "shared_name" : "WP1251",
+        "CTL_Ext" : "step 1",
+        "CTL_PathwayID" : "WP1251",
+        "CTL_Type" : "pathway",
+        "name" : "Metapathway biotransformation",
+        "SUID" : 3376,
+        "selected" : false
+      },
+      "position" : {
+        "x" : 723.9096609115602,
+        "y" : -526.4345014735273
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3247",
+        "CTL_label" : "Ddx4",
+        "logFC" : 1.135923897,
+        "CTL_GeneName" : "Ddx4",
+        "pValue" : 0.06041942,
+        "CTL_GeneID" : "ENSMUSG00000021758",
+        "shared_name" : "ENSMUSG00000021758",
+        "CTL_Ext" : "initial",
+        "CTL_Type" : "initial",
+        "name" : "ENSMUSG00000021758",
+        "SUID" : 3247,
+        "selected" : false
+      },
+      "position" : {
+        "x" : -148.43096485137923,
+        "y" : 48.24747865952935
+      },
+      "selected" : false
+    } ],
+    "edges" : [ {
+      "data" : {
+        "id" : "3439",
+        "source" : "3438",
+        "target" : "3279",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3439,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3375",
+        "source" : "3374",
+        "target" : "3279",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3375,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3437",
+        "source" : "3435",
+        "target" : "3238",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3437,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3436",
+        "source" : "3435",
+        "target" : "3251",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3436,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3372",
+        "source" : "3370",
+        "target" : "3297",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3372,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3434",
+        "source" : "3433",
+        "target" : "3259",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3434,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3431",
+        "source" : "3430",
+        "target" : "3271",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3431,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3429",
+        "source" : "3428",
+        "target" : "3259",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3429,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3427",
+        "source" : "3426",
+        "target" : "3236",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3427,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3425",
+        "source" : "3424",
+        "target" : "3267",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3425,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3423",
+        "source" : "3422",
+        "target" : "3259",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3423,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3421",
+        "source" : "3419",
+        "target" : "3295",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3421,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3420",
+        "source" : "3419",
+        "target" : "3255",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3420,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3418",
+        "source" : "3417",
+        "target" : "3269",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3418,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3416",
+        "source" : "3415",
+        "target" : "3294",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3416,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3414",
+        "source" : "3413",
+        "target" : "3259",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3414,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3412",
+        "source" : "3411",
+        "target" : "3267",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3412,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3409",
+        "source" : "3408",
+        "target" : "3239",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3409,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3410",
+        "source" : "3405",
+        "target" : "3259",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3410,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3407",
+        "source" : "3405",
+        "target" : "3255",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3407,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3406",
+        "source" : "3405",
+        "target" : "3295",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3406,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3404",
+        "source" : "3403",
+        "target" : "3297",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3404,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3402",
+        "source" : "3401",
+        "target" : "3297",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3402,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3400",
+        "source" : "3399",
+        "target" : "3297",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3400,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3398",
+        "source" : "3397",
+        "target" : "3247",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3398,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3396",
+        "source" : "3395",
+        "target" : "3276",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3396,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3394",
+        "source" : "3392",
+        "target" : "3251",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3394,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3393",
+        "source" : "3392",
+        "target" : "3299",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3393,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3391",
+        "source" : "3390",
+        "target" : "3255",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3391,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3388",
+        "source" : "3387",
+        "target" : "3255",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3388,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3386",
+        "source" : "3384",
+        "target" : "3236",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3386,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3385",
+        "source" : "3384",
+        "target" : "3238",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3385,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3389",
+        "source" : "3380",
+        "target" : "3297",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3389,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3383",
+        "source" : "3380",
+        "target" : "3236",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3383,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3382",
+        "source" : "3380",
+        "target" : "3238",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3382,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3381",
+        "source" : "3380",
+        "target" : "3251",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3381,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3379",
+        "source" : "3378",
+        "target" : "3259",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3379,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3432",
+        "source" : "3376",
+        "target" : "3271",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3432,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "3377",
+        "source" : "3376",
+        "target" : "3267",
+        "CTL_interaction" : "gene-pathway association",
+        "CTL_Ext" : "step 1",
+        "CTL_LinkSet" : "WikiPathways_Mus musculus_20180410",
+        "SUID" : 3377,
+        "CTL_datasource" : "WikiPathways_Mus musculus_20180410",
+        "selected" : false
+      },
+      "selected" : false
+    } ]
+  }
+}
