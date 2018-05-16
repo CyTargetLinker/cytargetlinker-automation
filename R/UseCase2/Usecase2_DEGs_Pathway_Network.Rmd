@@ -8,32 +8,28 @@ output: html_document
 *Part of this script are based on information / examples provided on in https://github.com/cytoscape/cytoscape-automation* 
 
 ## Step 0: Set up environment
+
+### Install RCy3
+Tested with RCy3 version 2.0.1 in R v3.5.0
+```{r setup, include=FALSE}
+source("https://bioconductor.org/biocLite.R")
+biocLite("RCy3")
+library(RCy3)
+```
+
 ### Set working directory
 ```{r set working directory}
+#install.packages("knitr")
+library(knitr)
 knitr:::input_dir()
 ```
 
-### Install required libraries
-```{r setup, include=FALSE}
-if(!("pacman" %in% installed.packages())) install.packages("pacman")
-library(pacman)
-p_load(RJSONIO,igraph,httr,stringr,XML,RColorBrewer,devtools,rmarkdown)
-
-# CyREST helper functions
-install_github('cytoscape/cytoscape-automation/for-scripters/R/r2cytoscape')
-library(r2cytoscape)
-```
-
 ### Test connection to Cytoscape and installed apps
-**port.number** needs to match value of Cytoscape property: rest.port (see Edit>Preferences>Properties...). Default is 1234.
 ```{r test connection}
-#port.number = 1234
-#base.url = paste('http://localhost:',port.number,'/v1',sep="")
+cytoscapePing()
 
-checkCytoscapeVersion()
-
-if("string" %in% commandHelp("")) print("Success: the STRING app is installed") else print("Warning: STRING app is not installed. Please install the STRING app before proceeding.")
-if("cytargetlinker" %in% commandHelp("")) print("Success: the CyTargetLinker app is installed") else print("Warning: CyTargetLinker app is not installed. Please install the CyTargetLinker app before proceeding.")
+if("string" %in% commandsHelp("")) print("Success: the STRING app is installed") else print("Warning: STRING app is not installed. Please install the STRING app before proceeding.")
+if("cytargetlinker" %in% commandsHelp("")) print("Success: the CyTargetLinker app is installed") else print("Warning: CyTargetLinker app is not installed. Please install the CyTargetLinker app before proceeding.")
 ```
 
 *** 
