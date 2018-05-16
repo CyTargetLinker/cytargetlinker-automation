@@ -41,7 +41,7 @@ Import the differentially expressed genes in Cytoscape
 ```{r}
 degs <- file.path(getwd(), "Data", "DEGs.xlsx")
 import.cmd = paste('network import file file="',degs,'" indexColumnSourceInteraction=1 firstRowAsColumnNames=true startLoadRow=1', sep="")
-commandRun(import.cmd)
+commandsRun(import.cmd)
 ```
 
 ![](https://github.com/CyTargetLinker/cytargetlinker-tutorials/blob/master/R/UseCase2/Figures/step1.png){height=100%}
@@ -62,13 +62,13 @@ Possible seetings for direction: SOURCES (add only source nodes), TARGETS (add o
 ```{r}
 wp <- file.path(getwd(), "LinkSets", "wikipathways-mm-20180410.xgmml")
 CTLextend.cmd = paste('cytargetlinker extend idAttribute="shared name" linkSetFiles="', wp, '" network=current direction=SOURCES', sep="")
-commandRun(CTLextend.cmd)
+commandsRun(CTLextend.cmd)
 ```
 
 ### Apply a force-directed layout to the network
 ```{r}
 CTLlayout.cmd = 'cytargetlinker applyLayout network=current'
-commandRun(CTLlayout.cmd)
+commandsRun(CTLlayout.cmd)
 ```
 
 ### Filter genes with pathway associations:
@@ -77,9 +77,9 @@ filter1.cmd = "network select edgeList=all"
 filter2.cmd = "network select extendEdges=true"
 filter3.cmd = "network create nodeList=selected edgeList=selected networkName=selection source=current"
 
-commandRun(filter1.cmd)
-commandRun(filter2.cmd)
-commandRun(filter3.cmd)
+commandsRun(filter1.cmd)
+commandsRun(filter2.cmd)
+commandsRun(filter3.cmd)
 
 ```
 
@@ -87,11 +87,11 @@ commandRun(filter3.cmd)
 ```{r}
 degs <- file.path(getwd(), "Data", "DEGs.xlsx")
 import.table1.cmd = paste('table import file file="',degs,'"  KeyColumnForMappingNetworkList="shared name" keyColumnIndex=1 startLoadRow=1 firstRowAsColumnNames=true', sep="")
-commandRun(import.table1.cmd)
+commandsRun(import.table1.cmd)
 
 p <- file.path(getwd(), "Data", "PathwayStatistics.xlsx")
 import.table2.cmd = paste('table import file file="', p, '"  KeyColumnForMapping=CTL.PathwayName keyColumnIndex=1 startLoadRow=1 firstRowAsColumnNames=true', sep="")
-commandRun(import.table2.cmd)
+commandsRun(import.table2.cmd)
 
 ```
 
@@ -99,10 +99,10 @@ commandRun(import.table2.cmd)
 ```{r}
 vizstyle.file <- file.path(getwd(), "VizStyles", "viz-style-usecase2.xml")
 LoadStyle.cmd = paste('vizmap load file file="',vizstyle.file,'"', sep="")
-commandRun(LoadStyle.cmd)
+commandsRun(LoadStyle.cmd)
 
 ApplyStyle.cmd = 'vizmap apply styles="CTL Gene Pathway Network"'
-commandRun(ApplyStyle.cmd)
+commandsRun(ApplyStyle.cmd)
 ```
 ![](https://github.com/CyTargetLinker/cytargetlinker-tutorials/blob/master/R/UseCase2/Figures/step2.png){height=100%}
 
