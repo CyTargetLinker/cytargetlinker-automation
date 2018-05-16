@@ -1,41 +1,35 @@
 ---
 title: '[CTL] Compound / Disease Extension'
 author: "mkutmon, scoort"
-date: "April 13, 2018"
 output: html_document
 ---
 
-*Part of this script are based on information / examples provided on in https://github.com/cytoscape/cytoscape-automation* 
+*Thanks to Alex Pico for his help to updating the scripts to RCy3*
 
 ## Step 0: Set up environment
+
+### Install RCy3
+Tested with RCy3 version 2.0.1 in R v3.5.0
+```{r setup, include=FALSE}
+source("https://bioconductor.org/biocLite.R")
+biocLite("RCy3")
+library(RCy3)
+```
+
 ### Set working directory
 ```{r set working directory}
+#install.packages("knitr")
+library(knitr)
 knitr:::input_dir()
 ```
 
-### Install required libraries
-```{r setup, include=FALSE}
-if(!("pacman" %in% installed.packages())) install.packages("pacman")
-library(pacman)
-p_load(RJSONIO,igraph,httr,stringr,XML,RColorBrewer,devtools,rmarkdown)
-
-# CyREST helper functions
-install_github('cytoscape/cytoscape-automation/for-scripters/R/r2cytoscape')
-library(r2cytoscape)
-```
-
 ### Test connection to Cytoscape and installed apps
-**port.number** needs to match value of Cytoscape property: rest.port (see Edit>Preferences>Properties...). Default is 1234.
 ```{r test connection}
-#port.number = 1234
-#base.url = paste('http://localhost:',port.number,'/v1',sep="")
 
-checkCytoscapeVersion()
+cytoscapePing()
 
-if("string" %in% commandHelp("")) print("Success: the STRING app is installed") else print("Warning: STRING app is not installed. Please install the STRING app before proceeding.")
-if("cytargetlinker" %in% commandHelp("")) print("Success: the CyTargetLinker app is installed") else print("Warning: CyTargetLinker app is not installed. Please install the CyTargetLinker app before proceeding.")
-
-applyStyle('default') # cleanse the palette before importing new networks and styles
+if("string" %in% commandsHelp("")) print("Success: the STRING app is installed") else print("Warning: STRING app is not installed. Please install the STRING app before proceeding.")
+if("cytargetlinker" %in% commandsHelp("")) print("Success: the CyTargetLinker app is installed") else print("Warning: CyTargetLinker app is not installed. Please install the CyTargetLinker app before proceeding.")
 ```
 
 *** 
@@ -47,7 +41,7 @@ Use Cytoscape to query the STRING database a network of proteins associated with
 ```{r disease query}
 #define disease query, cutoff, species and limit
 string.cmd = 'string disease query disease="Rett syndrome " cutoff=0.4 species="Homo sapiens" limit=20'
-commandRun(string.cmd)
+commandsRun(string.cmd)
 ```
 
 ![](https://github.com/CyTargetLinker/cytargetlinker-tutorials/blob/master/R/UseCase1/figures/Rett_syndrome_network.png){height=100%}
@@ -69,13 +63,13 @@ LinkSets can be downloaded from the CyTargetLinker website https://projects.bigc
 chembl <- file.path(getwd(), "LinkSets", "chembl_23_hsa_20180126.xgmml")
 omim <- file.path(getwd(), "LinkSets", "rare-disease-gene-associations-hsa-20180411.xgmml")
 CTLextend.cmd = paste('cytargetlinker extend idAttribute="display name" linkSetFiles="', chembl, ',', omim, '" network=current', sep="")
-commandRun(CTLextend.cmd)
+commandsRun(CTLextend.cmd)
 ```
 
 ### Apply a force-directed layout to the network
 ```{r}
 CTLlayout.cmd = 'cytargetlinker applyLayout network=current'
-commandRun(CTLlayout.cmd)
+commandsRun(CTLlayout.cmd)
 ```
 ![](https://github.com/CyTargetLinker/cytargetlinker-tutorials/blob/master/R/UseCase1/figures/Rett_syndrome_extended-v1.png){height=100%}
 
@@ -83,10 +77,9 @@ commandRun(CTLlayout.cmd)
 ```{r}
 vizstyle.file <- file.path(getwd(), "VizStyles", "use-case1-style.xml")
 LoadStyle.cmd = paste('vizmap load file file="',vizstyle.file,'"', sep="")
-commandRun(LoadStyle.cmd)
+commandsRun(LoadStyle.cmd)
 
-ApplyStyle.cmd = 'vizmap apply styles="CTL Disease Compound Network"'
-commandRun(ApplyStyle.cmd)
+setVisualStyle("CTL Disease Compound Network")
 ```
 ![](https://github.com/CyTargetLinker/cytargetlinker-tutorials/blob/master/R/UseCase1/figures/Rett_syndrome_extended-v2.png){height=100%}
 
@@ -116,7 +109,7 @@ You can export the network model in multiple standard formats. And if you want t
 cyjs.file <- file.path(getwd(), "Results", "RettSyndrome_Compound_Disease_Network.cyjs")
 exportNetwork(cyjs.file,'CYJS')  #.cyjs
 json.file <- file.path(getwd(), "Results", "RettSyndrome_Compound_Disease_Network.json")
-exportStyle(json.file,'json')
+exportVisualStyles(json.file,'JSON')
 ```
 
 More details in Cytoscape manual chapter on [Interactive Web Applications](http://manual.cytoscape.org/en/stable/Export_Your_Data.html#as-an-interactive-web-application-new-in-3-2-0)
