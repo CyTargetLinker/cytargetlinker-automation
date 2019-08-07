@@ -9,6 +9,7 @@ version: 2.0
 # Tested with 
 # Cytoscape version 3.7.1
 # CyTargetLinker version 4.1.0
+# stringApp version 1.4.2
 # R version 3.5.3
 # RCy3 version 2.0.88
 ################################
