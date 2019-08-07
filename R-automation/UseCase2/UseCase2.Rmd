@@ -1,0 +1,94 @@
+---
+  title: 'CyTargetLinker use case 2: Gene-Pathway extension'
+author: "mkutmon"
+date: "July 7, 2019"
+version: 2.0
+---
+  
+  ################################
+# Tested with 
+# Cytoscape version 3.7.1
+# CyTargetLinker version 4.1.0
+# R version 3.5.3
+# RCy3 version 2.0.88
+################################
+
+# Step 0: Set up environment
+```{r setup, include=FALSE}
+if(!"RCy3" %in% installed.packages()){
+  install.packages("RCy3")
+}
+library(RCy3)
+```
+
+## Set working directory
+```{r set working directory}
+if(!"knitr" %in% installed.packages()){
+  install.packages("knitr")
+}
+library(knitr)
+knitr:::input_dir()
+```
+
+## check cytoscape connection
+```{r test connection}
+cytoscapePing()
+if("cytargetlinker" %in% commandsHelp("")) print("Success: the CyTargetLinker app is installed") else print("Warning: CyTargetLinker app is not installed. Please install the CyTargetLinker app before proceeding.")
+```
+
+# Step 1: Load differentially expressed gene list
+```{r}
+degs <- file.path(getwd(), "Data", "DEGs.xlsx")
+import.cmd = paste('network import file file="',degs,'" indexColumnSourceInteraction=1 firstRowAsColumnNames=true startLoadRow=1', sep="")
+commandsRun(import.cmd)
+```
+
+# Step 2: Extend network with pathway information
+```{r}
+wp <- file.path(getwd(), "LinkSets", "wikipathways-mm-20180410.xgmml")
+CTLextend.cmd = paste('cytargetlinker extend idAttribute="shared name" linkSetFiles="', wp, '" network=current direction=SOURCES', sep="")
+commandsRun(CTLextend.cmd)
+layoutNetwork()
+```
+
+# Step 3: Filter genes without any pathway information
+```{r}
+filter1.cmd = "network select edgeList=all"
+filter2.cmd = "network select extendEdges=true"
+filter3.cmd = "network create nodeList=selected edgeList=selected networkName=selection source=current"
+
+commandsRun(filter1.cmd)
+commandsRun(filter2.cmd)
+commandsRun(filter3.cmd)
+```
+
+# Step 4: Load gene expression data for genes and pathway statistics scores pathways
+```{r}
+degs <- file.path(getwd(), "Data", "DEGs.xlsx")
+import.table1.cmd = paste('table import file file="',degs,'"  KeyColumnForMappingNetworkList="shared name" keyColumnIndex=1 startLoadRow=1 firstRowAsColumnNames=true', sep="")
+commandsRun(import.table1.cmd)
+
+p <- file.path(getwd(), "Data", "PathwayStatistics.xlsx")
+import.table2.cmd = paste('table import file file="', p, '"  KeyColumnForMapping=CTL.PathwayName keyColumnIndex=1 startLoadRow=1 firstRowAsColumnNames=true', sep="")
+commandsRun(import.table2.cmd)
+```
+
+# Step 5: Apply visual style
+```{r}
+vizstyle.file <- file.path(getwd(), "VizStyles", "viz-style-usecase2.xml")
+LoadStyle.cmd = paste('vizmap load file file="',vizstyle.file,'"', sep="")
+commandsRun(LoadStyle.cmd)
+
+ApplyStyle.cmd = 'vizmap apply styles="CTL Gene Pathway Network"'
+commandsRun(ApplyStyle.cmd)
+```
+
+# Step 5: Save images and session
+```{r}
+png.file <- file.path(getwd(), "Gene-Pathway-Network.png")
+exportImage(png.file,'PNG')
+session.file <- file.path(getwd(), "Gene-Pathway-Network.cys")
+saveSession(session.file)
+```
+
+

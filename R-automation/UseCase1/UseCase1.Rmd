@@ -1,0 +1,81 @@
+---
+  title: 'CyTargetLinker use case 1: PPI Compound / Disease Extension'
+author: "mkutmon"
+date: "July 7, 2019"
+version: 2.0
+---
+  
+  ################################
+# Tested with 
+# Cytoscape version 3.7.1
+# CyTargetLinker version 4.1.0
+# R version 3.5.3
+# RCy3 version 2.0.88
+################################
+
+# Step 0: Set up environment
+```{r setup, include=FALSE}
+if(!"RCy3" %in% installed.packages()){
+  install.packages("RCy3")
+}
+library(RCy3)
+```
+
+## Set working directory
+```{r set working directory}
+if(!"knitr" %in% installed.packages()){
+  install.packages("knitr")
+}
+library(knitr)
+knitr:::input_dir()
+```
+
+## check cytoscape connection
+```{r test connection}
+cytoscapePing()
+if("cytargetlinker" %in% commandsHelp("")) print("Success: the CyTargetLinker app is installed") else print("Warning: CyTargetLinker app is not installed. Please install the CyTargetLinker app before proceeding.")
+if("string" %in% commandsHelp("")) print("Success: the STRING app is installed") else print("Warning: STRING app is not installed. Please install the STRING app before proceeding.")
+```
+
+# Step 1: Load PPI from STRING
+```{r}
+string.cmd = 'string disease query disease="Rett syndrome " cutoff=0.4 species="Homo sapiens" limit=20'
+commandsRun(string.cmd)
+```
+
+# Step 2: Extend network with compound (ChEMBL) and disease (OMIM) information
+## Before you run this section, please make sure to unzip the ChEMBL link set in the LinkSets folder. The file is to big to upload to github without being zipped. 
+```{r}
+chembl <- file.path(getwd(), "LinkSets", "chembl_23_hsa_20180126.xgmml")
+omim <- file.path(getwd(), "LinkSets", "rare-disease-gene-associations-hsa-20180411.xgmml")
+CTLextend.cmd = paste('cytargetlinker extend idAttribute="display name" linkSetFiles="', chembl, ',', omim, '" network=current', sep="")
+commandsRun(CTLextend.cmd)
+layoutNetwork()
+```
+
+# Step 4: Load viusal style
+```{r}
+vizstyle.file <- file.path(getwd(), "VizStyles", "use-case1-style.xml")
+LoadStyle.cmd = paste('vizmap load file file="',vizstyle.file,'"', sep="")
+commandsRun(LoadStyle.cmd)
+
+setVisualStyle("CTL Disease Compound Network")
+```
+
+```{r}
+lockNodeDimensions(TRUE)
+setNodeShapeDefault('ellipse')
+setNodeColorMapping('CTL.Type', c('initial', 'article', 'journal'), colors=c('#D3D3D3', '#F5CA2E', '#5D90C7'), mapping.type="d")
+setNodeLabelMapping('CTL.label')
+setNodeFontSizeBypass(authors[,1], 30)
+```
+
+# Step 5: Save images and session
+```{r}
+png.file <- file.path(getwd(), "Disease-Compound-Rett-Network.png")
+exportImage(png.file,'PNG')
+session.file <- file.path(getwd(), "Disease-Compound-Rett-Network.cys")
+saveSession(session.file)
+```
+
+

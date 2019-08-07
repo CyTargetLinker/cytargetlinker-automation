@@ -1,0 +1,78 @@
+---
+title: 'CyTargetLinker use case 3: Author - Publication - Journal Network'
+author: "mkutmon"
+date: "July 7, 2019"
+version: 2.0
+---
+
+################################
+# Tested with 
+# Cytoscape version 3.7.1
+# CyTargetLinker version 4.1.0
+# R version 3.5.3
+# RCy3 version 2.0.88
+################################
+
+# Step 0: Set up environment
+```{r setup, include=FALSE}
+if(!"RCy3" %in% installed.packages()){
+    install.packages("RCy3")
+}
+library(RCy3)
+```
+
+## Set working directory
+```{r set working directory}
+if(!"knitr" %in% installed.packages()){
+    install.packages("knitr")
+}
+library(knitr)
+knitr:::input_dir()
+```
+
+## check cytoscape connection
+```{r test connection}
+cytoscapePing()
+if("cytargetlinker" %in% commandsHelp("")) print("Success: the CyTargetLinker app is installed") else print("Warning: CyTargetLinker app is not installed. Please install the CyTargetLinker app before proceeding.")
+```
+
+# Step 1: Load author information (list of wikidata identifiers)
+```{r}
+authors <- read.csv("authors.txt", sep="")
+createNetworkFromDataFrames(as.data.frame(authors),NULL, title="Network", collection="Publication Network")
+```
+
+# Step 2: Extend network with known publications of authors
+```{r}
+publications <- file.path(getwd(), "linksets", "publications.xgmml")
+CTLextend.cmd = paste('cytargetlinker extend idAttribute="shared name" linkSetFiles="', publications, '" network=current direction=BOTH', sep="")
+commandsRun(CTLextend.cmd)
+layoutNetwork()
+```
+
+# Step 3: Extend the network with journal names of the publications
+```{r}
+journals <- file.path(getwd(), "linksets", "journals.xgmml")
+CTLextend.cmd = paste('cytargetlinker extend idAttribute="shared name" linkSetFiles="', journals, '" network=current direction=BOTH', sep="")
+commandsRun(CTLextend.cmd)
+layoutNetwork()
+```
+
+# Step 4: Adapt viusal style
+```{r}
+lockNodeDimensions(TRUE)
+setNodeShapeDefault('ellipse')
+setNodeColorMapping('CTL.Type', c('initial', 'article', 'journal'), colors=c('#D3D3D3', '#F5CA2E', '#5D90C7'), mapping.type="d")
+setNodeLabelMapping('CTL.label')
+setNodeFontSizeBypass(authors[,1], 30)
+```
+
+# Step 5: Save images and session
+```{r}
+png.file <- file.path(getwd(), "Author-Publication-Journal-Network.png")
+exportImage(png.file,'PNG')
+session.file <- file.path(getwd(), "Author-Publication-Journal-Network.cys")
+saveSession(session.file)
+```
+
+
