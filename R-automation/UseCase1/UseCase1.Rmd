@@ -47,8 +47,8 @@ commandsRun(string.cmd)
 # Step 2: Extend network with compound (ChEMBL) and disease (OMIM) information
 ## Before you run this section, please make sure to unzip the ChEMBL link set in the linksets folder. The file is to big to upload to github without being zipped. 
 ```{r}
-chembl <- file.path(getwd(), "linksets", "chembl_23_hsa_20180126.xgmml")
-omim <- file.path(getwd(), "linksets", "rare-disease-gene-associations-hsa-20180411.xgmml")
+chembl <- file.path(getwd(), "LinkSets", "chembl_23_hsa_20180126.xgmml")
+omim <- file.path(getwd(), "LinkSets", "rare-disease-gene-associations-hsa-20180411.xgmml")
 CTLextend.cmd = paste('cytargetlinker extend idAttribute="display name" linkSetFiles="', chembl, ',', omim, '" network=current', sep="")
 commandsRun(CTLextend.cmd)
 layoutNetwork()
